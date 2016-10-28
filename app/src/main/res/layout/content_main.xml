@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:id="@+id/bt_choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="选择图片"
+            android:adjustViewBounds="true"
+            />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_below="@id/ll"
+        android:adjustViewBounds="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/haizei"
+        android:layout_marginTop="3dp"
+        ></ImageView>
+
+    <!-- 游戏的主界面-->
+    <GridLayout
+        android:layout_marginTop="3dp"
+        android:layout_below="@id/iv"
+        android:id="@+id/gl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="5"
+        android:rowCount="3"
+        android:adjustViewBounds="true"
+        >
+    </GridLayout>
+    <TextView
+        android:id="@+id/tv_step"
+        android:layout_below="@id/gl"
+        android:layout_marginTop="3dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="已用步数：0"
+        android:textSize="26sp"
+        />
+
+</RelativeLayout>
